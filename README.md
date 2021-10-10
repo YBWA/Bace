@@ -1,4 +1,4 @@
-# Bace
+# Bace(Better ACwing Editor)
 AcWing 自带的代码编辑器主题并不支持高度个性化，云端编辑器主题也改不了，用起来非常不爽 \jk 。
 
 所以我就瞎折腾了一段时间，搞了一个改变 AcWing 题目下方编辑器 、AC Editor 、Markdown 代码框的样式。
