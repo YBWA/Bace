@@ -1,0 +1,288 @@
+/* ==UserStyle==
+@name           Bace
+@namespace      USO Archive
+@author         Ytterbiumer
+@description    改变 AcWing 题目下方编辑器主题
+@version        2.6
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+
+==/UserStyle== */
+/* Mariana */
+/* :root {
+    --normal-font: rgb(230, 230, 230);
+    --left-and-right-paren: rgb(230, 230, 230);
+    --keyword: rgb(198, 149, 198);
+    --number-and-angle-brackets: rgb(239, 165, 79);
+    --things-in-qutation-marks: rgb(153, 199, 148);
+    --define-var-and-function: rgb(198, 149, 198);
+    --using-function: rgb(102, 153, 204);
+    --qutation-marks: rgb(96, 180, 180);
+    --operator: rgb(249, 123, 87);
+    --comma-and-semicolons: rgb(166, 172, 185);
+    --note: rgb(166, 172, 185);
+    --background: rgb(48, 56, 65);
+    --text-that-choosed: rgb(67, 76, 87);
+    --line-that-cursor-in: rgb(48, 56, 65);
+    --font-of-row-number: rgb(132, 139, 149);
+    --background-of-row-number: rgb(48, 56, 65);
+    --bu-hui-fan-yi: rgb(76, 88, 99);
+    --you-bu-hui-fan: rgb(132, 139, 149);
+    --hljs-keyword: rgb(198, 149, 198);
+    --hljs-meta: rgb(198, 149, 198);
+    --hljs-meta-keyword: rgb(198, 149, 198);
+    --hljs-meta-string: rgb(153, 199, 148);
+    --hljs-title: rgb(96, 180, 180);
+    --hljs-comment: rgb(166, 172, 185);
+    --hljs-built_in: rgb(102, 153, 204);
+    --hljs-string: rgb(153, 199, 148);
+    --hljs-number: rgb(239, 165, 79);
+    --hljs-function: rgb(198, 149, 198);
+    --hljs-params: rgb(230, 230, 230);
+    --hljs-code: rgb(230, 230, 230);
+    --hljs-cpp-background: rgb(48, 56, 65);
+    --hljs-literal: rgb(236, 96, 102);
+    --hljs-selection: rgb(67, 76, 87);
+} */
+/* Darcula */
+/* :root {
+    --normal-font : #a9b7c6;
+    --left-and-right-paren : #a9b7c6;
+    --keyword : #cc7832;
+    --number-and-angle-brackets : #6897bb;
+    --things-in-qutation-marks : rgb(105,134,88);
+    --define-var-and-function : #cc7832;
+    --using-function : #a9b7c6;
+    --qutation-marks : #6a8759;
+    --operator : #a9b7c6;
+    --comma-and-semicolons : #cc7832;
+    --note : #787878;
+    --background : rgb(43,43,43);
+    --text-that-choosed : rgb(33,66,131);
+    --line-that-cursor-in : rgb(50,50,50);
+    --font-of-row-number : rgb(92,97,99);
+    --background-of-row-number : rgb(49,51,53);
+    --bu-hui-fan-yi : rgb(50,50,50);
+    --you-bu-hui-fan : rgb(155, 155, 155);
+    --hljs-keyword : #cc7832;
+    --hljs-meta : #6a8759;
+    --hljs-meta-keyword : #cc7832;
+    --hljs-meta-string : #cc7832;
+    --hljs-title : rgb(254,171,75);
+    --hljs-comment : #787878;
+    --hljs-built_in : #a9b7c6;
+    --hljs-string : rgb(105,134,88);
+    --hljs-number : #6897bb;
+    --hljs-function : #cc7832;
+    --hljs-params : #a9b7c6;
+    --hljs-code : #a9b7c6;
+    --hljs-cpp-background : rgb(43,43,43);
+    --hljs-literal : #6897bb;
+    --hljs-selection :  rgb(33,66,131);
+} */
+/* Obsidian */
+/* :root {
+    --normal-font : rgb(224, 226, 228);
+    --left-and-right-paren : rgb(232, 226, 183);
+    --keyword : rgb(160, 130, 189);
+    --number-and-angle-brackets : rgb(255, 205, 34);
+    --things-in-qutation-marks : rgb(236, 118, 0);
+    --define-var-and-function : rgb(103, 140, 177);
+    --using-function : rgb(103, 140, 177);
+    --qutation-marks : rgb(236, 118, 0);
+    --operator : rgb(232, 226, 183);
+    --comma-and-semicolons : rgb(232, 226, 183);
+    --note : rgb(102, 116, 123);
+    --background : rgb(41, 49, 52);
+    --text-that-choosed : rgb(64, 78, 81);
+    --line-that-cursor-in : rgb(0, 0, 0);
+    --font-of-row-number : rgb(106, 128, 136);
+    --background-of-row-number : rgb(47, 56, 60);
+    --bu-hui-fan-yi : rgb(47, 56, 60);
+    --you-bu-hui-fan : rgb(106, 128, 136);
+    --hljs-keyword : rgb(103, 140, 177);
+    --hljs-meta : rgb(160, 130, 189);
+    --hljs-meta-keyword : rgb(160, 130, 189);
+    --hljs-meta-string : rgb(255, 205, 34);
+    --hljs-title : rgb(224, 226, 228);
+    --hljs-comment : rgb(102, 116, 123);
+    --hljs-built_in : rgb(160, 130, 189);
+    --hljs-string : rgb(236, 118, 0);
+    --hljs-number : rgb(255, 205, 34);
+    --hljs-function : rgb(160, 130, 189);
+    --hljs-params : rgb(224, 226, 228);
+    --hljs-code : rgb(224, 226, 228);
+    --hljs-cpp-background : rgb(41, 49, 52);
+    --hljs-literal : rgb(255, 205, 34);
+    --hljs-selection : rgb(64, 78, 81);
+} */
+.ace_identifier {
+    /*普通字*/
+    color: var(--normal-font) !important;
+}
+.ace_paren.ace_lparen,
+.ace_paren.ace_rparen {
+    /*左右括号*/
+    color: var(--left-and-right-paren) !important;
+}
+.ace_keyword,
+.ace_meta.ace_tag,
+.ace_storage {
+    /* 关键字*/
+    color: var(--keyword) !important;
+}
+.ace_constant.ace_character,
+.ace_constant.ace_other,
+.ace_constant.ace_numeric {
+    /* 数字、尖括号内容*/
+    color: var(--number-and-angle-brackets) !important;
+}
+.ace_constant.ace_language,
+.ace_string {
+    /*引号内容*/
+    color: var(--things-in-qutation-marks) !important;
+}
+.ace_storage.ace_type,
+.ace_support.ace_class,
+.ace_support.ace_type {
+    /*变量、函数定义*/
+    color: var(--define-var-and-function) !important;
+}
+.ace_support.ace_function {
+    /* 函数调用*/
+    color: var(--using-function) !important;
+}
+.ace_string.ace_start,
+.ace_string.ace_end {
+     /* 引号*/
+    color: var(--qutation-marks) !important;
+}
+.ace_operator {
+    /* 运算符*/
+    color: var(--operator) !important;
+}
+.ace_punctuation {
+    /* 逗号分号*/
+    color: var(--comma-and-semicolons) !important;
+}
+.ace_comment {
+    /* 注释*/
+    color: var(--note) !important;
+}
+.ace-monokai,
+.ace_scroller {
+    /* 背景*/
+    background-color: var(--background) !important;
+}
+.ace_selection {
+    /*选中文本背景颜色*/
+    background: var(--text-that-choosed) !important;
+}
+.ace_marker-layer .ace_active-line {
+    /* 光标所在行背景颜色 */
+    background: var(--line-that-cursor-in) !important;
+}
+.ace_gutter-cell,
+.ace_gutter {
+    /* 行数显示栏字体*/
+    color: var(--font-of-row-number) !important;
+    /* 行数显示栏背景*/
+    background: var(--background-of-row-number) !important;
+}
+.ace-tm .ace_cursor {
+    /*光标颜色*/
+    color : white!important;
+}
+.ace_text {
+    color: var(--normal-font) !important;
+}
+.ace_gutter-active-line {
+    /* 光标所在行行数显示栏颜色修改 */
+    background-color: var(--bu-hui-fan-yi) !important;
+    color: var(--you-bu-hui-fan) !important;
+}
+.ace-tm .ace_indent-guide {
+    /*对齐线（因为不会改所以就把它删掉了/kk*/
+    background:url() right repeat-y;
+}
+/* 一下为 Markdown 代码框的主题修改 */
+.hljs-keyword {
+    /* 关键字 */
+    color: var(--hljs-keyword) !important;
+}
+.hljs-meta,
+.hljs-section {
+    /* include 的 # 和 define 、 typedef 的一些东西 */
+    color: var(--hljs-meta) !important;
+}
+.hljs-meta-keyword {
+    /* 定义函数时的函数名 */
+    color: var(--hljs-meta-keyword) !important;
+}
+.hljs-meta-string {
+    /* 定义函数时的变量 */
+    color: var(--hljs-meta-string) !important;
+}
+.hljs-function {
+    /* 定义函数*/
+    color: var(--hljs-function) !important;
+}
+.hljs-title {
+    /* 定义函数时的函数名 */
+    color: var(--hljs-title) !important;
+}
+.hljs-params {
+    /* 定义函数时的变量名 */
+    color: var(--hljs-params) !important;
+}
+.hljs-comment {
+    /* 注释 */
+    color: var(--hljs-comment) !important;
+}
+.hljs-built_in {
+    /* 不知道是什么awwa，但会影响 "std" 的颜色 */
+    color: var(--hljs-built_in) !important;
+}
+.hljs-string {
+    /* 引号内容，但好像数组定义也会变成这个颜色 */
+    color: var(--hljs-string) !important;
+}
+.hljs-number,
+.hljs-symbol {
+    /* 数字 */
+    color: var(--hljs-number) !important;
+}
+.hljs-literal {
+    /* 不清楚，但影响 "ios::sync_with_stdio(false)" 的 false */
+    color: var(--hljs-literal) !important;
+}
+pre.hljs,
+pre.hljs.cpp,
+pre.hljs.perl,
+pre.hljs.ruby,
+pre.hljs.cs,
+pre.hljs.makefile,
+pre.hljs.bash,
+pre.hljs.markdown {
+    /* 背景 */
+    color: var(--hljs-code) !important;
+    background: var(--hljs-cpp-background) !important;
+}
+.hljs-keyword::selection,
+.hljs-meta::selection,
+.hljs-meta-keyword::selection,
+.hljs-meta-string::selection,
+.hljs-function::selection,
+.hljs-title::selection,
+.hljs-params::selection,
+.hljs-comment::selection,
+.hljs-built_in::selection,
+.hljs-string::selection,
+.hljs-number::selection,
+.hljs-literal::selection,
+.hljs-code::selection,
+.hljs-symbol::selection,
+code::selection {
+    /* 选中字 */
+    background: var(--hljs-selection)!important;
+}
